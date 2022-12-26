@@ -1,0 +1,22 @@
+{
+  "name": "gulptest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeRomann/gulptest.git"
+  },
+  "author": "valeroman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeRomann/gulptest/issues"
+  },
+  "homepage": "https://github.com/ValeRomann/gulptest#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
