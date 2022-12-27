@@ -1,10 +1,17 @@
-const {src, dest} = require('gulp');
-const scss = require('gulp-sass');
+import gulp from "gulp";
+import { path } from './gulp/config/path.js';
 
-function styles() {
-  return src('app/scss/style.scss')
-    .pipe(scss())
-    .pipe(dest('app/css'))
+global.app = {
+  path: path,
+  gulp: gulp
+};
+
+import { copy } from "./gulp/tasks/copy.js";
+
+function watcher() {
+  gulp.watch(path.watch.files, copy);
 }
 
-exports.styles = styles;
+const dev = gulp.series(copy, watcher).
+
+gulp.task("default", dev);
