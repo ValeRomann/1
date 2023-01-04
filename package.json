@@ -16,5 +16,8 @@
     "url": "https://github.com/ValeRomann/gulptest/issues"
   },
   "homepage": "https://github.com/ValeRomann/gulptest#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
