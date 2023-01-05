@@ -8,4 +8,4 @@ global.app = {
 
 import { copy } from './gulp/tasks/copy.js';
 
-gulp.task('defailt', copy);
+gulp.task('default', copy);
