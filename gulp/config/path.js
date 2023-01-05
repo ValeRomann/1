@@ -11,7 +11,9 @@ export const path = {
   src: {
     files: `${srcFolder}/files/**/*.*`
   },
-  wathch: {},
+  wathch: {
+    files: `${srcFolder}/files/**/*.*`
+  },
   clean: buildFolder,
   buildFolder: buildFolder,
   srcFolder: srcFolder,
