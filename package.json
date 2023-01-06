@@ -20,5 +20,9 @@
   "devDependencies": {
     "del": "^6.1.1",
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "D": "^1.0.0",
+    "gulp-file-include": "^2.3.0"
   }
 }
