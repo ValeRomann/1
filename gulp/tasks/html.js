@@ -11,11 +11,11 @@ export const html = () => {
         message: "Error: <%= error.message %>"
       })
     ))
-    //.pipe(fileinclude())
-    .pipe(pug({
-      pretty: true,//compress html
-      verbose: true//show worked files in terminal
-    }))
+    .pipe(fileinclude())
+    // .pipe(pug({
+    //   pretty: true,//compress html
+    //   verbose: true//show worked files in terminal
+    // }))
     .pipe(app.plugins.replace(/@img\//g, 'img/'))
     .pipe(webpHtmlNosvg())
     .pipe(
@@ -34,5 +34,6 @@ export const html = () => {
         }
       })
     )
-    .pipe(app.gulp.dest(app.path.build.html));
+    .pipe(app.gulp.dest(app.path.build.html))
+    .pipe(app.plugins.browsersync.stream());
 }

@@ -1,3 +1,4 @@
+// import {src} from 'gulp';
 import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
@@ -6,15 +7,20 @@ const srcFolder = './src';
 
 export const path = {
   build: {
+    css: `${buildFolder}/css/`,
     html: `${buildFolder}/`,
     files: `${buildFolder}/files/`
   },
   src: {
-    html: `${srcFolder}/*.pug`,
+    scss: `${srcFolder}/scss/style.scss`,
+    html: `${srcFolder}/*.html`,
+    // html: `${srcFolder}/*.pug`,
     files: `${srcFolder}/files/**/*.*`
   },
-  wathch: {
-    html: `${srcFolder}/**/*.pug`,
+  watch: {
+    scss: `${srcFolder}/scss/**/*.scss`,
+    html: `${srcFolder}/**/*.html`,
+    // html: `${srcFolder}/**/*.pug`,
     files: `${srcFolder}/files/**/*.*`
   },
   clean: buildFolder,
