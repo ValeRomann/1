@@ -21,7 +21,8 @@ export const path = {
     svg: `${srcFolder}/img/**/*.svg`,
     html: `${srcFolder}/*.html`,images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
     // html: `${srcFolder}/*.pug`,
-    files: `${srcFolder}/files/**/*.*`
+    files: `${srcFolder}/files/**/*.*`,
+    svgicons: `${srcFolder}/svgicons/*.svg`
   },
   watch: {
     js: `${srcFolder}/js/**/*.js`,
@@ -29,7 +30,7 @@ export const path = {
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
     html: `${srcFolder}/**/*.html`,
     // html: `${srcFolder}/**/*.pug`,
-    files: `${srcFolder}/files/**/*.*`
+    files: `${srcFolder}/files/**/*.*`,
   },
   clean: buildFolder,
   buildFolder: buildFolder,
